@@ -15,30 +15,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('base', ['content' => new Title('index')]);
+    return view('index', ['content' => new Title('index')]);
 });
 
 Route::get('home', function () {
-    return view('base', ['content' => new Title('index')]);
+    return view('index', ['content' => new Title('index')]);
 });
 
 Route::get('about', function () {
-    return view('base', ['content' => new Title('about')]);
+    return view('about', ['content' => new Title('about')]);
 });
 
 Route::get('blog', function () {
-    return view('base', ['content' => new Title('blog')]);
+    return view('blog', ['content' => new Title('blog')]);
 });
 
 Route::get('single', function () {
-    return view('base', ['content' => new Title('single')]);
+    return view('single', ['content' => new Title('single')]);
 });
 
 Route::get('sidebar-left', function () {
-    return view('base', ['content' => new Title('sidebar-left')]);
+    return view('sidebar-left', ['content' => new Title('sidebar-left')]);
 });
 
 
 Route::get('sidebar-right', function () {
-    return view('base', ['content' => new Title('sidebar-right')]);
+    return view('sidebar-right', ['content' => new Title('sidebar-right')]);
 });
